@@ -1,0 +1,26 @@
+<head>
+  <title>backEndTest</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+  {{> data}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="data">
+  <h2>TEST</h2>
+  {{#each test in tests}}
+    tableChangeCount: {{test.tableChangeCount}}<br>
+  {{/each}}
+  <h2>TABLES</h2>
+  {{#each table in tables}}
+    changeCount: {{table.changeCount}}<br>
+  {{/each}}
+</template>
