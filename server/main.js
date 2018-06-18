@@ -35,6 +35,7 @@ Meteor.publish('test', function pubTest() {
     if(added) self.changed('test', form._id, form);
     else {
       self.added('test', form._id, form);
+      // Comment out the next line and it will work
       added = true;
     }
 
